@@ -9,6 +9,8 @@ public class Commercial extends Salarie {
 	private double poucentageCommission;
 	
 	
+	// ------ TP4
+	
 	// les constructeurs
 	public Commercial(int matricule, int categorie, int service, String nom, double salaire) {
 		super(matricule, categorie, service, nom, salaire);

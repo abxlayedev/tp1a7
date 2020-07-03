@@ -14,13 +14,13 @@ public class Salarie {
 	
 	public Salarie (int matricule, int categorie, int service, String nom, double salaire) {
 		
-
+		// ------ TP7
 		try {
 			setSalaire(salaire);
 		} catch (Erreurs e) {
 			e.printStackTrace();
 		}
-		
+		// ------ TP7
 		try {
 			setCategorie(categorie);
 		} catch (Erreurs e) {
@@ -70,7 +70,7 @@ public class Salarie {
 	}
 	
 	
-	// ------ TP12
+	// ------ TP2
 	public int getMatricule () {
 		return matricule;
 	}
@@ -85,7 +85,7 @@ public class Salarie {
 	}
 	
 	public void setCategorie (int categorie) throws Erreurs {
-		
+		// ------ TP7
 		if ( categorie == 1 || categorie == 2 || categorie == 3) {
 			this.categorie = categorie;
 		} else {
@@ -116,6 +116,7 @@ public class Salarie {
 	}
 	
 	public void setSalaire (double salaire) throws Erreurs {
+		// ------ TP7
 		if (salaire < 0) {
 			throw new Erreurs("Le salaire doit être supérieur à 0 !");
 		} else {

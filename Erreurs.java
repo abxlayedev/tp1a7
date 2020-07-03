@@ -5,3 +5,6 @@ public class Erreurs extends Throwable {
 		System.out.println(erreur);
 	}
 }
+
+
+//------ TP7
